@@ -1,0 +1,278 @@
+@charset "utf-8";
+/* CSS Document */
+.fl{ float: left;}
+.fr{float: right;}
+
+.container{
+	width:1130px;
+	margin:auto;
+}
+
+.top{
+	height:100px;
+}
+
+.logo{
+	width:370px;
+	height:100px;
+	
+}
+
+.menubg{
+	background: #036;
+	border-radius: 5px;
+	height:63px;
+}
+.menu{
+    width:970px;	
+}
+.menu ul li{
+	line-height: 38px;
+	float: left;
+}
+.menu ul li:last-child{
+	background: none;
+}
+.menu ul li a{
+	color:#f3f3f3;
+	padding:0 35px 0 30px;
+	display: block;
+	
+}
+.menu ul li a.a1{
+	background-position: 5px 5px;
+}
+.menu ul li a.a2{
+	background-position: 5px 5px;
+}
+.menu ul li a.a3{
+	background-position: -345px 5px;
+}
+.menu ul li a.a4{
+	background-position: -456px 5px;
+}
+.menu ul li a.a5{
+	background-position: -568px 5px;
+}
+.menu ul li a.a6{
+	background-position: -680px 5px;
+}
+.menu ul li a.a7{
+	background-position: -790px 5px;
+}
+.menu ul li a.a8{
+	background-position: -903px 5px;
+}
+
+
+.menu ul li a:hover,.menu ul li a.active{
+	color:#1288de;
+	text-decoration: none;
+}
+/*menu end*/
+
+.search{
+	background: url(../images/search.png) no-repeat left top;
+	height:21px;
+	width:132px;
+	margin-top:7px;
+	margin-right: 10px;
+}
+.inp-text{
+	background: none;
+	border:none;
+	width:100px;
+	padding-left:3px;
+	line-height: 21px;
+	color:#fff;
+}
+.inp-but{
+	background: none;
+	border:none;
+	width:30px;
+	height:21px;
+	cursor: pointer;
+}
+/*top end*/
+
+.banner{
+	/*background: url(../images/ban1.jpg) no-repeat center top;*/
+	height:423px;
+	position: relative;
+	margin-top:18px;
+}
+.an-left{
+	position: absolute;
+	left:18px;
+	top:175px;
+}
+.an-right{
+	position: absolute;
+	right:18px;
+	top:175px;
+}
+
+.lun{
+	position: absolute;
+	left:465px;
+	bottom:0px;
+	
+}
+.lun ul li{
+	float: left;
+	width:63px;
+	height:7px;
+	
+	
+	margin:0 2px;
+}
+.lun ul li a{
+	display: block;
+	width:63px;background: #d1d1d1;
+	height:7px;border-radius: 5px;
+}
+.lun ul li a:hover{
+	background: #c24242;
+}
+
+.shiyanbg{
+	height:310px;margin-top:20px;
+}
+.about{
+	width:625px;
+	
+}
+.ab-top{
+	
+	height:30px;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+.ab-tit{
+	font-size: 16px;
+	color:#003366;
+}
+.ab-tit img{
+	margin-right: 7px;
+	font-size: 14px;
+	color:#003366;
+}
+.ab-more a{
+	font-size: 14px;
+	color:#666;
+}
+.ab-more img{
+	margin-right: 3px;
+}
+.ab-img{
+	width:220px;
+}
+.ab-text{
+	width:395px;
+}
+.ab-img ul li{
+	margin-bottom:20px;
+}
+.ab-img ul li img{
+	display: block;
+	box-shadow: 2px 2px 2px 2px #90a6bc;
+/*	border:1px solid #90a6bc;*/
+	border-radius: 5px;
+}
+
+.new{
+width:468px;
+}
+
+.new ul li{
+	line-height: 50px;
+	border-bottom: 1px dotted #ccc;
+	text-align: right;
+}
+.new ul li a{
+	color:#666;
+	font-size: 14px;
+	background: url(../images/blue.png) no-repeat left center;
+	padding-left:15px;
+	float: left;
+}
+.new ul li span{
+	background: #ddd;
+	border-radius: 5px;
+	padding:0 5px;
+}
+
+.share{
+	height:210px;
+	margin-top:20px;
+	margin-bottom: 40px;
+}
+
+.cheng{
+	width:920px;
+}
+.link{
+	width:175px;
+}
+.link ul li{
+	line-height: 33px;
+	background: url(../images/hm.png) no-repeat left center;
+	padding-left:20px;
+}
+.link ul li span{
+	
+}
+
+.link ul li a{
+	font-size: 14px;
+	color:#666;
+	/*text-decoration: underline;
+	float: right;*/
+}
+
+.cheng ul li{
+	float: left;
+	margin-right: 66px;
+}
+.cheng ul li p{
+	text-align: center;
+	line-height: 40px;
+
+}
+.cheng ul li p a{
+	color:#666;
+	background: url(../images/fa.png) no-repeat left center;
+	padding-left:17px;
+	padding-right: 17px;
+}
+.cheng ul li img{
+	box-shadow: 2px 2px 2px 2px #90a6bc;
+}
+.cheng ul li:last-child{
+	margin-right: 0px;
+}
+
+
+
+
+
+
+.foot{
+	border-top:1px solid #bbb;
+    text-align: center;
+	color:#999;
+	font-size: 13px;
+	line-height:26px;
+	height:45px;
+}
+.foot a{
+	color:#999;
+}
+
+
+
+.ab-text p
+{
+line-height:22px;
+}
