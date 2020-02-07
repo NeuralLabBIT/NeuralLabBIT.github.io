@@ -1,14 +1,80 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8"> 
-<title>菜鸟教程(runoob.com)</title>
-<link rel="stylesheet" type="text/css" href="styles.css"> 
+    <meta charset="UTF-8">
+    <title>图片轮换（上、下）</title>
+    <style type="text/css">
+        #outer{
+            width: 600px;
+            margin: 50px auto;
+            background: plum;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+ 
+    <script type="text/javascript">
+        /*定义全局变量*/
+        var index = 0;
+        var img = ["./images/cy.png","./images/logo1.jpg","./images/logo.jpg"];
+        var imgObject;
+        // var info;
+        var timer;
+ 
+        window.onload = function () {/*当页面加载完成后再执行这部分js代码*/
+            imgObject = document.getElementsByTagName("img")[0];
+            var info = document.getElementById("info");
+            info.innerHTML = "一共是"+img.length+"张图片，现在是第"+(index+1)+"张";
+            
+        }
+        function start() {
+            clearInterval(timer);
+            timer = setInterval(function () {
+                index++;
+                if(index > img.length-1){
+                    index = 0;
+                }
+                imgObject.src = img[index];
+                info.innerHTML = "一共是"+img.length+"张图片，现在是第"+(index+1)+"张";
+            },2000);
+        }
+        function stop() {
+            alert("自动停止播放");
+            clearInterval(timer);
+        }
+        
+        // function getNextImg() {
+        //     // var imgObject = document.getElementsByTagName("img")[0];
+        //     var info = document.getElementById("info");
+        //     index++;
+        //     if(index > img.length-1){  /*当图片已经翻到最后一张时，跳转到第一张图片*/
+        //         index = 0;
+        //     }
+        //     imgObject.src = img[index];
+        //     info.innerHTML = "一共是"+img.length+"张图片，现在是第"+(index+1)+"张";
+        //
+        // }
+        // function getProImg() {
+        //     // alert(--index);/*写代码时的测试*/
+        //     // var imgObject = document.getElementsByTagName("img")[0];
+        //     var info = document.getElementById("info");
+        //     index--;
+        //     if(index < 0){            /*当图片已经翻到第张时，跳转到最后一张图片*/
+        //         index =img.length - 1;
+        //     }
+        //     imgObject.src = img[index];
+        //     info.innerHTML = "一共是"+img.length+"张图片，现在是第"+(index+1)+"张";
+        // }
+    </script>
 </head>
-
 <body>
-<h1>我是通过样式文件 styles.css 渲染后显示的。</h1>
-<p>我也是。</p>
+<div id="outer">
+    <p id="info">这是第几张图片</p>
+    <img src="./images/cy.png" alt="" style="width: 560px;height: 300px">
+    <button id="start" οnclick="start();">开始</button>
+    <button id="stop" οnclick="stop();">停止</button>
+ 
+</div>
 </body>
-
 </html>

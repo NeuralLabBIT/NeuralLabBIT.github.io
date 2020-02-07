@@ -3,6 +3,20 @@
 .fl{ float: left;}
 .fr{float: right;}
 
+.text_p{
+	position:absolute;
+	left: 150px
+}
+.text_q{
+	position:absolute;
+	left: 740px
+}
+
+.text_pq{
+	position:absolute;
+	left: 1080px
+}
+
 .container{
 	width:1130px;
 	margin:auto;
@@ -97,7 +111,7 @@
 
 .banner{
 	/*background: url(../images/ban1.jpg) no-repeat center top;*/
-	height:423px;
+	height:250px;
 	position: relative;
 	margin-top:18px;
 }
@@ -136,7 +150,7 @@
 }
 
 .shiyanbg{
-	height:310px;margin-top:20px;
+	height:310px;margin-top:2px;
 }
 .about{
 	width:625px;
@@ -204,7 +218,7 @@ width:468px;
 }
 
 .share{
-	height:210px;
+	height:300px;
 	margin-top:20px;
 	margin-bottom: 40px;
 }
