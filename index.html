@@ -24,6 +24,14 @@
     </style>
 
 </head>
+
+<SCRIPT LANGUAGE="JavaScript">
+function test(){
+var s = document.getElementById("9ebeac80-2555-4992-9324-a5c3011b886c");
+        location.href="index.html?"+"txt="+encodeURI(s.value);
+    }
+</SCRIPT>
+
 <body>
 <div class="container">
     <div class="top">
@@ -39,7 +47,7 @@
     <!--top end-->
     <div class="menubg">
         <div class="menu fl">
-            <ul><li><a class='a1' href='/'>首&nbsp;&nbsp;页</a></li><li><a class='a2' data-id='9ebeac80-2555-4992-9324-a5c3011b886c' target='_self' href='/Data/List/sysgk'>团队介绍</a></li><li><a class='a3' data-id='32b00c6e-0b56-4bf8-bf33-a5c3011bbbda' target='_self' href='./Data/List/team_introduction'>导师团队</a></li><li><a class='a4' data-id='ed268a0d-a6ae-480f-9a19-a5c3011bbc2e' target='_self' href='/Data/List/zdyjs'>人才培养</a></li><li><a class='a5' data-id='d1ec4640-cc8f-4506-8884-a609009e627a' target='_self' href='/Data/List/cgzss'>研究成果</a></li><li><a class='a6' data-id='ec24749d-1ea5-43cd-981d-a609009e6335' target='_self' href='/Data/List/cdkt'>承担课题</a></li><li><a class='a7' data-id='873a3043-8245-49c2-8ec3-a609009e62dd' target='_self' href='/Data/List/zszp'>招生招聘</a></li></ul>
+            <ul><li><a class='a1' href='/'>首&nbsp;&nbsp;页</a></li><li><a class='a2' data-id='9ebeac80-2555-4992-9324-a5c3011b886c' target='_self' href='./Data/List/sysgk'>团队介绍</a></li><li><a class='a3' data-id='32b00c6e-0b56-4bf8-bf33-a5c3011bbbda' target='_self' href='./Data/List/team_introduction'>导师团队</a></li><li><a class='a4' data-id='ed268a0d-a6ae-480f-9a19-a5c3011bbc2e' target='_self' href='/Data/List/zdyjs'>人才培养</a></li><li><a class='a5' data-id='d1ec4640-cc8f-4506-8884-a609009e627a' target='_self' href='/Data/List/cgzss'>研究成果</a></li><li><a class='a6' data-id='ec24749d-1ea5-43cd-981d-a609009e6335' target='_self' href='/Data/List/cdkt'>承担课题</a></li><li><a class='a7' data-id='873a3043-8245-49c2-8ec3-a609009e62dd' target='_self' href='/Data/List/zszp'>招生招聘</a></li></ul>
             <div class="clearfix"></div>
         </div>
     </div>
@@ -141,6 +149,11 @@
     </div>
     <div class="clearfix"></div>
 </div>
+
+<input type="text" id="txt">
+</br>
+<input type="button" value="TEST" onclick="test()"/>
+
 <!--share End-->
 
         <div class="foot">
@@ -171,34 +184,34 @@
             window.location.href = b + e;
         }
 
-        $(function () {
-            /*srarch*/
-            $('#btnSearch').on('click', function () { search('skey'); });
-            $('#skey').on('keypress', function (event) {
-                if (event.keyCode == 13) {
-                    search('skey');
-                    return false;
-                }
-            }).on('click', function () { if ($(this).val() == '搜索') { $(this).val('').css({ 'color': '#333' }); } })
-              .on('blur', function () { if ($(this).val().length == 0) { $(this).val('搜索').css({ 'color': '#999' }); } }).val('搜索').css({ 'color': '#999' });
+        // $(function () {
+        //     /*srarch*/
+        //     $('#btnSearch').on('click', function () { search('skey'); });
+        //     $('#skey').on('keypress', function (event) {
+        //         if (event.keyCode == 13) {
+        //             search('skey');
+        //             return false;
+        //         }
+        //     }).on('click', function () { if ($(this).val() == '搜索') { $(this).val('').css({ 'color': '#333' }); } })
+        //       .on('blur', function () { if ($(this).val().length == 0) { $(this).val('搜索').css({ 'color': '#999' }); } }).val('搜索').css({ 'color': '#999' });
 
-            //显示查询的关键字
-            if ('' != "") {
-                $("#skey").val('');
-            }
+        //     //显示查询的关键字
+        //     if ('' != "") {
+        //         $("#skey").val('');
+        //     }
 
-            //selected menu
-            var _url = window.location.href.toLowerCase();
-            //导航选中
-            $(".menu a").each(function (k, v) {
-                if ('X.Project.Core.Models.Model.Category' != null) {
-                    var _vhref = $(v).attr('href').toLocaleLowerCase();
-                    if ($(v).data('id') == '00000000-0000-0000-0000-000000000000' || (_url.indexOf(_vhref) > -1 && _vhref.length > 5)) {
-                        $(v).addClass("active");
-                        return;
-                    }
-                }
-            });
+        //     //selected menu
+        //     var _url = window.location.href.toLowerCase();
+        //     //导航选中
+        //     $(".menu a").each(function (k, v) {
+        //         if ('X.Project.Core.Models.Model.Category' != null) {
+        //             var _vhref = $(v).attr('href').toLocaleLowerCase();
+        //             if ($(v).data('id') == '00000000-0000-0000-0000-000000000000' || (_url.indexOf(_vhref) > -1 && _vhref.length > 5)) {
+        //                 $(v).addClass("active");
+        //                 return;
+        //             }
+        //         }
+        //     });
 
             //左侧选中
             $('.slide-nav-ul li a').each(function (k, v) {
